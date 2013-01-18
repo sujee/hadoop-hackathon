@@ -1,0 +1,76 @@
+intro-lab1 : Getting familiar with Hadoop system
+
+Core hadoop has two components
+    HDFS - hadoop distributed file system -- also known as DFS
+    MapReduce - frame work for processing files in HDFS -- also known as MR
+
+This lab assumes you have hadoop properly installed
+
+Starting Stopping Hadoop
+-----
+
+start-dfs:
+    hadoop-1
+        $  hadoop_dir/bin/start-dfs.sh
+
+    hadoop-2
+        $  hadoop_dir/sbin/start-dfs.sh
+
+start mapreduce:
+    hadoop-1
+        $  hadoop_dir/bin/start-mapred.sh
+
+    hadoop-2
+        $  hadoop_dir/sbin/start-mapred.sh
+
+
+start every thing
+    hadoop-1
+        $  hadoop_dir/bin/start-all.sh
+
+    hadoop-2
+        $  hadoop_dir/sbin/start-all.sh
+
+stop all
+    hadoop-1
+        $  hadoop_dir/bin/stop-all.sh
+
+    hadoop-2
+        $  hadoop_dir/sbin/stop-all.sh
+
+
+
+Hadoop UI
+---------
+
+Namenode UI is at  http://namenode_host:50070
+e.g.   :  http://localhost:50070
+
+MapReduce UI is at  http://job_tracker_host:50030
+e.g.   :  http://localhost:50030
+
+
+Exploring Namenode UI
+----------------
+go to namenode UI  (e.g  http://localhost:50070)
+
+Q : what version of hadoop are we running
+
+Q : what is the capacity of 'cluster' 
+
+Q : how many data nodes in cluster
+
+Q : Click on 'Browse File System' link, explore around
+
+Q : Click on 'Live Nodes' and click around
+
+
+
+Exploring Map Reduce UI:
+-----------
+go to job tracker UI (e.g.  http://localhost:50030)
+
+Q : how many task trackers are in the cluster
+
+Q : how many   map / reduce slots are available
+

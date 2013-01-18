@@ -3,6 +3,6 @@ hadoop-hackathon
 
 Materials for hadoop hackathon
 
-hadoop-lab1 - exploring hadoop file system
+intro-lab1 - exploring hadoop UI
 mr-lab1 - mapreduce job to process tweets
 
